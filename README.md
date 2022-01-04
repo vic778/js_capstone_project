@@ -10,7 +10,7 @@
 
 
 
-![](https://github.com/vic778/js_capstone_project/blob/Counter/img/screen2.png)
+![](https://github.com/vic778/js_capstone_project/blob/MovieCounterJestTest/img/screen3.png)
 ## Built With
 
 - HTML5
