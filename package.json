@@ -21,6 +21,7 @@
   "homepage": "https://github.com/vic778/js_capstone_project#readme",
   "devDependencies": {
     "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.7",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
