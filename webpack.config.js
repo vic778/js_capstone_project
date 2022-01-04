@@ -1,5 +1,6 @@
 const path = require('path');
 /* eslint-disable */
+const merge = require('lodash.merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 /* eslint-enable */
 
@@ -48,3 +49,11 @@ module.exports = {
     ],
   },
 };
+
+const productionConfig = merge([ //eslint-disable-line
+  {
+    output: {
+      publicPath: '/js_capstone_project/',
+    },
+  },
+]);
