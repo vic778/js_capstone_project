@@ -10,8 +10,6 @@
  
 ![](https://github.com/Buyaki01/js_capstone_project/blob/develop/img/screen2.png)
 
-
-
 ![](https://github.com/vic778/js_capstone_project/blob/MovieCounterJestTest/img/screen3.png)
 ## Built With
 
@@ -24,7 +22,7 @@
 - API
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://vic778.github.io/js_capstone_project/)
 
 ## Author 1
 
