@@ -30,8 +30,15 @@
 - Twitter: [@victoirBarh](https://twitter.com/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/victoir-barh)
 
+## Author 2 👤 
+
+- GitHub: [@cwaku](https://github.com/cwaku)
+- LinkedIn: [Ricky Mormor](www.linkedin.com/in/ricky-mormor)
+- Instagram: [@rickymormor](https://instagram.com/rickymormor)
+- Twitter: [@rickymormor](https://twitter.com/rickymormor)
+
 ## Getting Started
-- run `npm install` to install all dependecies
+- run `npm install` to install all dependencies
 - run `npm start` to run the server
 
 ### Prerequisites:
