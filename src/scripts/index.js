@@ -1,8 +1,9 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/style.css';
+// eslint-disable-next-line import/no-cycle
 import showsList from './Display/cards.js';
-import showPopup from './Display/commentPopup.js';
+import { showPopup, hidePopup } from './Display/commentPopup.js';
 import { getComments, commentsCounter, addComment } from './API/commentsAPI.js';
 
 showsList.renderCards();
@@ -36,7 +37,7 @@ const displayCommentCount = async (itemId) => {
 
 const displayAllComments = async (itemId) => {
   const allComments = await getComments(itemId);
-  if (allComments) {
+  if (allComments.length > 0) {
     allComments.forEach((comment) => {
       commentElement(comment.creation_date, comment.username, comment.comment);
     });
@@ -57,4 +58,5 @@ closeBtn.addEventListener('click', () => {
 });
 
 showPopup();
-export default commentsCounter;
+hidePopup();
+export { commentsCounter, displayCommentCount };

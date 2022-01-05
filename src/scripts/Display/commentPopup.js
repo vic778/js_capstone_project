@@ -16,4 +16,12 @@ const showPopup = () => {
   });
 };
 
-export default showPopup;
+const hidePopup = () => {
+  const exampleModal = document.getElementById('exampleModal');
+  exampleModal.addEventListener('hide.bs.modal', () => {
+    const displayComment = document.querySelector('.display-comment');
+    displayComment.innerHTML = '';
+  });
+};
+
+export { showPopup, hidePopup };

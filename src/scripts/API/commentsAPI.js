@@ -3,12 +3,12 @@ const getURLComments = 'https://us-central1-involvement-api.cloudfunctions.net/c
 const getComments = async (itemId) => {
   const data = await fetch(`${getURLComments}?item_id=${itemId}`);
   const response = await data.json();
-  return response;
+  return response || [];
 };
 
 const commentsCounter = async (itemId) => {
   const arrayOfComments = await getComments(itemId);
-  return arrayOfComments.length;
+  return arrayOfComments.length || 0;
 };
 
 const addComment = async (getId, getName, getComment) => {

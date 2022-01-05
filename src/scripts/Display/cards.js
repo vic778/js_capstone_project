@@ -2,6 +2,8 @@ import tv from '../API/TV-maze.js';
 import involvement from '../API/Involvement.js';
 import elisteners from '../utils/listeners.js';
 import counter from '../utils/counter.js';
+// eslint-disable-next-line import/no-cycle
+import { displayCommentCount } from '../index.js';
 
 class CardsUX {
   constructor() {
@@ -30,6 +32,7 @@ class CardsUX {
         const viewCommentsBtn = document.querySelector('.display-comment-btn');
         inputForm.dataset.id = show.id;
         viewCommentsBtn.dataset.id = show.id;
+        displayCommentCount(show.id);
       });
       this.setValuesOfCards(clone, show, numOfLikes);
       this.itemsList.appendChild(clone);
